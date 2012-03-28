@@ -9,9 +9,9 @@
 	<url>http://code.google.com/p/hibernate-validator-pl</url>
 
 	<scm>
-		<connection>scm:svn:http://hibernate-validator-pl.googlecode.com/svn/tags/hibernate-validator-pl-0.3.3</connection>
-		<developerConnection>scm:svn:https://hibernate-validator-pl.googlecode.com/svn/tags/hibernate-validator-pl-0.3.3</developerConnection>
-		<url>http://code.google.com/p/hibernate-validator-pl/source/browse/#svn/tags/hibernate-validator-pl-0.3.3</url>
+		<connection>scm:git:https://mariuszs@code.google.com/p/hibernate-validator-pl/</connection>
+		<developerConnection>scm:git:https://mariuszs@code.google.com/p/hibernate-validator-pl/</developerConnection>
+		<url>http://code.google.com/p/hibernate-validator-pl/source/browse/</url>
 	</scm>
 
 	<issueManagement>
