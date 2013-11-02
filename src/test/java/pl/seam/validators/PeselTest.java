@@ -30,8 +30,7 @@ public class PeselTest extends TestCase {
 		PESELValidator val = new PESELValidator();
 
 		String pesel = null;
-		assert val.isValid(pesel) : "Pesel jest poprawny - nie wymagane pole!"
-				+ pesel;
+		assert val.isValid(pesel) : "Pesel jest poprawny - nie wymagane pole!" + pesel;
 		pesel = "";
 		assert !val.isValid(pesel) : "Pesel jest niepoprawny!" + pesel;
 

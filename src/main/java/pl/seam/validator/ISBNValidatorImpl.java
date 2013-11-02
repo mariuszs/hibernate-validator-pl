@@ -83,7 +83,7 @@ public class ISBNValidatorImpl {
 	 * character.
 	 */
 	private String clean(String isbn) {
-		StringBuffer buf = new StringBuffer(10);
+		StringBuilder buf = new StringBuilder(10);
 
 		for (int i = 0; i < isbn.length(); i++) {
 			char digit = isbn.charAt(i);

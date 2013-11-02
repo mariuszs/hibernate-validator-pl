@@ -37,8 +37,7 @@ public class RegonTest
     	REGONValidator val = new REGONValidator();
 
 		String regon = null;
-		assert val.isValid(regon) : "Regon jest poprawny - nie wymagane pole!"
-				+ regon;
+		assert val.isValid(regon) : "Regon jest poprawny - nie wymagane pole!" + regon;
 		regon = "";
 		assert !val.isValid(regon) : "Regon jest niepoprawny!" + regon;
 		// 7 cyfr

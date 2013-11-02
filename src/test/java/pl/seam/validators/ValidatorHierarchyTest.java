@@ -11,7 +11,7 @@ public class ValidatorHierarchyTest {
             return super.removeNonDigit(str);
         }
     }
-    private static ValidatorBaseExt vb = new ValidatorBaseExt();
+    private static final ValidatorBaseExt vb = new ValidatorBaseExt();
 
     @Test
     public void remove_alpha() {

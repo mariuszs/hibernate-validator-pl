@@ -1,10 +1,9 @@
 package pl.seam.validators;
 
-import static org.fest.assertions.Assertions.assertThat;
-
 import org.junit.Test;
-
 import pl.seam.hibernate.validator.NIPValidator;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class NIPTest {
 

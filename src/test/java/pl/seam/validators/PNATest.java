@@ -37,8 +37,7 @@ public class PNATest
     	PNAValidator val = new PNAValidator();
 
 		String pna = null;
-		assert val.isValid(pna) : "Kod pocztowy jest poprawny - nie wymagane pole!"
-				+ pna;
+		assert val.isValid(pna) : "Kod pocztowy jest poprawny - nie wymagane pole!" + pna;
 		pna = "";
 		assert !val.isValid(pna) : "Kod pocztowy jest niepoprawny!" + pna;
 		// 7 cyfr

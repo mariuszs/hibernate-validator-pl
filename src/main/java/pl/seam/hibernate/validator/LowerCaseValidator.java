@@ -1,37 +1,34 @@
 package pl.seam.hibernate.validator;
 
-import org.apache.commons.lang.StringUtils;
 import org.hibernate.validator.Validator;
+
+import static org.apache.commons.lang3.StringUtils.lowerCase;
 
 /**
  * Hibernet Validator for String that contains only lower case letters.
- * 
+ * <p/>
  * http://jakarta.apache.org/commons/lang/api/org/apache/commons/lang/StringUtils.html
- * 
+ *
  * @author marian
  */
 public class LowerCaseValidator extends ValidatorBase implements
-		Validator<LowerCase> {
+        Validator<LowerCase> {
 
-	public void initialize(LowerCase configuration) {
-	}
+    public void initialize(LowerCase configuration) {
+    }
 
-	public boolean isValid(Object value) {
-		if (value == null) {
-			return true;
-		}
+    public boolean isValid(Object value) {
+        if (value == null) {
+            return true;
+        }
 
-		if (!(value instanceof String)) {
-			return false;
-		}
+        if (!(value instanceof String)) {
+            return false;
+        }
 
-		String alpha = (String) value;
+        String alpha = (String) value;
 
-		if (!alpha.equals(StringUtils.lowerCase(alpha))) {
-			return false;
-		}
+        return alpha.equals(lowerCase(alpha));
 
-		return true;
-
-	}
+    }
 }

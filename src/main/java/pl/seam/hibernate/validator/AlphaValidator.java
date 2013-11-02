@@ -28,7 +28,7 @@ public class AlphaValidator implements Validator<Alpha> {
             return ((String) v).matches(onlyUnicodeLetters);
         else if (allowNumeric && !allowSpace)
             return ((String) v).matches(unicodeLettersWithDigits);
-        else if (allowNumeric && allowSpace)
+        else if (allowNumeric)
             return ((String) v).matches(unicodeLettersWithDigitsAndWhiteSpaces);
         else
             return ((String) v).matches(unicodeLettersWithSpaces);

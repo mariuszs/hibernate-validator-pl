@@ -1,6 +1,6 @@
 package pl.seam.hibernate.validator;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.hibernate.validator.Validator;
 
 /**
@@ -29,11 +29,7 @@ public class AsciiPrintableValidator extends ValidatorBase implements
 		} else
 			return false;
 
-		if (!StringUtils.isAsciiPrintable(ascii)) {
-			return false;
-		}
+        return StringUtils.isAsciiPrintable(ascii);
 
-		return true;
-
-	}
+    }
 }

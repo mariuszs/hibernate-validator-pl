@@ -21,7 +21,7 @@ public class PNAValidator extends ValidatorBase implements Validator<PNA> {
 			return true;
 		}
 
-		String pna = null;
+		String pna;
 
 		if (value instanceof String) {
 			pna = (String) value;
@@ -32,12 +32,8 @@ public class PNAValidator extends ValidatorBase implements Validator<PNA> {
 		} else
 			return false;
 
-		if (pna.length() != 5) {
-			return false;
-		}
+        return pna.length() == 5;
 
-		return true;
-
-	}
+    }
 
 }
